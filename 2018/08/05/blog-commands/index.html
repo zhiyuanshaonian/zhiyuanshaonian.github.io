@@ -69,7 +69,7 @@
 
 
 
-  <meta name="keywords" content="hexo git," />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -80,18 +80,18 @@
 
 
 
-<meta name="description" content="Hexo文档 指令hexo init [folder]新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。 hexo new [layout] &amp;lt;title&amp;gt;新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的华，请使用括号括起来。 hexo generate生成静态文件。">
-<meta name="keywords" content="hexo git">
+<meta name="description" content="Hexo文档 hexo init [folder]新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。 hexo new [layout] &amp;lt;title&amp;gt;新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的华，请使用括号括起来。 hexo generate 生成静态文件,可以简写为">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="建立博客用到的一些命令">
 <meta property="og:url" content="http://yoursite.com/2018/08/05/blog-commands/index.html">
 <meta property="og:site_name" content="纸鸢少年">
-<meta property="og:description" content="Hexo文档 指令hexo init [folder]新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。 hexo new [layout] &amp;lt;title&amp;gt;新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的华，请使用括号括起来。 hexo generate生成静态文件。">
+<meta property="og:description" content="Hexo文档 hexo init [folder]新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。 hexo new [layout] &amp;lt;title&amp;gt;新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的华，请使用括号括起来。 hexo generate 生成静态文件,可以简写为">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-06T04:40:35.864Z">
+<meta property="og:updated_time" content="2018-08-06T05:13:52.587Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="建立博客用到的一些命令">
-<meta name="twitter:description" content="Hexo文档 指令hexo init [folder]新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。 hexo new [layout] &amp;lt;title&amp;gt;新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的华，请使用括号括起来。 hexo generate生成静态文件。">
+<meta name="twitter:description" content="Hexo文档 hexo init [folder]新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。 hexo new [layout] &amp;lt;title&amp;gt;新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的华，请使用括号括起来。 hexo generate 生成静态文件,可以简写为">
 
 
 
@@ -351,8 +351,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/some-commands/" itemprop="url" rel="index">
-                    <span itemprop="name">some commands</span>
+                  <a href="/categories/hexo-commands/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo commands</span>
                   </a>
                 </span>
 
@@ -389,9 +389,23 @@
 
       
         <p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo文档</a></p>
-<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><p><code>hexo init [folder]</code>新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。</p>
+<p><code>hexo init [folder]</code><br>新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。</p>
 <p><code>hexo new [layout] &lt;title&gt;</code><br>新建一篇文章。如果没有设置<code>layout</code>的话，默认使用<code>_config.yml</code>中的<code>default_layout</code>参数代替。如果标题包含空格的华，请使用括号括起来。</p>
-<p><code>hexo generate</code><br>生成静态文件。</p>
+<p><code>hexo generate</code> 生成静态文件,可以简写为<code>hexo g</code>。<br><code>hexo generate -d --deploy</code> 文件生成后立即部署网站。<br><code>hexo generate -w --watch</code> 监视文件变动。</p>
+<p><code>hexo publish [layout] &lt;filename&gt;</code> 发表草稿。</p>
+<p><code>hexo server</code> 启动服务器。默认情况下，访问网址为：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br><code>hexo server -p --port</code>重设端口。<br><code>hexo server -s --static</code>只使用静态文件。<br><code>hexo server -l --log</code>启动日记记录，使用覆盖记录格式。</p>
+<p><code>hexo deploy</code> 部署网站，可简写为<code>hexo d</code>。</p>
+<p><code>hexo render &lt;file1&gt; [file2]...</code> 渲染文件。</p>
+<p><code>hexo migrate &lt;type&gt;</code> 从其他博客系统迁移内容。</p>
+<p><code>hexo clean</code> 清除缓存文件<code>(db.json)</code>和已经生成的文件<code>(public)</code>。</p>
+<p><code>hexo list &lt;type&gt;</code> 列出网站资料。</p>
+<p><code>hexo version</code> 显示Hexo版本。</p>
+<p><code>hexo --safe</code> 在安全模式下，不会载入插件和脚本。</p>
+<p><code>hexo --debug</code> 在终端中显示调试信息并记录到<code>debug.log</code>。</p>
+<p><code>hexo --silent</code> 隐藏终端信息。</p>
+<p><code>hexo --config custom.yml</code> 自定义配置文件的路径，执行后将不再使用<code>_config.yml</code>。</p>
+<p><code>hexo --draft</code> 显示<code>source/_drafts</code>文件夹中的草稿文章。</p>
+<p><code>hexo --cwd /path/to/cwd</code> 自定义当前工作目录<code>(Current working directory)</code>的路径。</p>
 
       
     </div>
@@ -409,9 +423,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo-git/" <i class="fa fa-tag"></i>
+            <a href="/tags/hexo/" <i class="fa fa-tag"></i>
 
- hexo git</a>
+ hexo</a>
           
         </div>
       
@@ -484,17 +498,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -535,7 +540,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -581,22 +586,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#指令"><span class="nav-number">1.</span> <span class="nav-text">指令</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

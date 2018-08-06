@@ -3,12 +3,12 @@
   <entry>
     <title><![CDATA[建立博客用到的一些命令]]></title>
     <url>%2F2018%2F08%2F05%2Fblog-commands%2F</url>
-    <content type="text"><![CDATA[Hexo文档 指令hexo init [folder]新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。 hexo new [layout] &lt;title&gt;新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的华，请使用括号括起来。 hexo generate生成静态文件。]]></content>
+    <content type="text"><![CDATA[Hexo文档 hexo init [folder]新建一个网站。如果没有设置folder,Hexo默认在目前的文件夹建立网站。 hexo new [layout] &lt;title&gt;新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的华，请使用括号括起来。 hexo generate 生成静态文件,可以简写为hexo g。hexo generate -d --deploy 文件生成后立即部署网站。hexo generate -w --watch 监视文件变动。 hexo publish [layout] &lt;filename&gt; 发表草稿。 hexo server 启动服务器。默认情况下，访问网址为：http://localhost:4000/hexo server -p --port重设端口。hexo server -s --static只使用静态文件。hexo server -l --log启动日记记录，使用覆盖记录格式。 hexo deploy 部署网站，可简写为hexo d。 hexo render &lt;file1&gt; [file2]... 渲染文件。 hexo migrate &lt;type&gt; 从其他博客系统迁移内容。 hexo clean 清除缓存文件(db.json)和已经生成的文件(public)。 hexo list &lt;type&gt; 列出网站资料。 hexo version 显示Hexo版本。 hexo --safe 在安全模式下，不会载入插件和脚本。 hexo --debug 在终端中显示调试信息并记录到debug.log。 hexo --silent 隐藏终端信息。 hexo --config custom.yml 自定义配置文件的路径，执行后将不再使用_config.yml。 hexo --draft 显示source/_drafts文件夹中的草稿文章。 hexo --cwd /path/to/cwd 自定义当前工作目录(Current working directory)的路径。]]></content>
       <categories>
-        <category>some commands</category>
+        <category>hexo commands</category>
       </categories>
       <tags>
-        <tag>hexo git</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
